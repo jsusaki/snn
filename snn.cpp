@@ -164,23 +164,23 @@ int main()
 {
 	// Input Data
 	Matrix X = vector<vector<float>>  { { 0, 0 },
-										{ 0, 1 },
-										{ 1, 0 },
-										{ 1, 1 } };
+					    { 0, 1 },
+					    { 1, 0 },
+					    { 1, 1 } };
 
 	// Weight Matrices
 	Matrix W = vector<vector<float>>  { { 0.35, 0.45, 0.40, 0.55 },
-										{ 0.55, 0.45, 0.15, 0.55 } };
+					  { 0.55, 0.45, 0.15, 0.55 } };
 
 	Matrix W1 = vector<vector<float>> { { 0.35 },
-										{ 0.40 },
-										{ 0.45 }, 
-										{ 0.50 } };
+					    { 0.40 },
+					    { 0.45 }, 
+					    { 0.50 } };
 	// Output Data
 	Matrix y = vector<vector<float>>  { { 0 },
-										{ 1 },
-										{ 1 },
-										{ 0 } };
+					    { 1 },
+					    { 1 },
+					    { 0 } };
 
 	// Training
 	for (int e = 0; e < 10000; e++)
