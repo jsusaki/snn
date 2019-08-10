@@ -209,9 +209,7 @@ int main()
 
 		for (int i = 0; i < pred.Row(); i++)
 			for (int j = 0; j < pred.Col(); j++)
-			{
 				cout << "Pred: " << pred[i][j] << " Error: " << pred_error[i][j] << endl;
-			}
 	}
 
 	return 0;
