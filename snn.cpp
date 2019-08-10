@@ -153,9 +153,7 @@ Matrix MSE(Matrix& truth, Matrix& pred)
 	Matrix output(truth.Row(), truth.Col());
 	for (int i = 0; i < truth.Row(); i++)
 		for (int j = 0; j < truth.Col(); j++)
-		{
 			output[i][j] += powf((truth[i][j] - pred[i][j]), 2);
-		}
 	return output;
 }
 
@@ -170,7 +168,7 @@ int main()
 
 	// Weight Matrices
 	Matrix W = vector<vector<float>>  { { 0.35, 0.45, 0.40, 0.55 },
-					  { 0.55, 0.45, 0.15, 0.55 } };
+					    { 0.55, 0.45, 0.15, 0.55 } };
 
 	Matrix W1 = vector<vector<float>> { { 0.35 },
 					    { 0.40 },
